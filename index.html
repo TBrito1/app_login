@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+	@author: Thiago Brito
+	@e-mail: brito.thiago01@gmail.com
+-->
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>MyAPP-Login WEB</title>
+		<!--Estilos Pessoal-->
+		<link  rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="interface">
+			<div id="centro" class="login">
+				<form method="post" action="ope.php" id="formlogin" name="formlogin">
+					<fieldset id="usuario">
+						<legend>LOGIN</legend><br/>
+						<label>NOME : </label>
+						<!--o campo “name” dentro do input é importante, pois ele que armazenará os dados digitados-->
+						<input type="text" oninvalid="InvalidMsg(this);" name="login" id="login" required/><br/>
+						<label>SENHA :</label>
+						<input type="password" oninvalid="InvalidMsg(this);" name="senha" id="senha" required/><br/>
+						<input type="submit" class="botao" value="LOGIN" name="LOGIN"/>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<script language="javascript" src="js/funcoes.js"> </script>
+	</body>
+</html> 

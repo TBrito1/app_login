@@ -1,0 +1,61 @@
+***
+* Attention!
+* This and all other files in this project were written in Portuguese
+* as the standard language of human understanding. So most, but not all the comments, functions and attributes
+* follow this language for their nomenclatures.
+* Therefore, all files have been configured as UTF8 encoding due to language support.
+* If you have any questions, please contact: brito.thiago01@gmail.com
+***
+
+	Sobre:
+Esta é a implementação de uma aplicação Web para validação de acesso 'Login' ao sistema.
+Cujo o cenário é de um usuário administrador logando em seu sistema para desfrutar de suas funcionalidades*, 
+que não implementas por não fazerem parte do escopo.
+Este simples projeto foi desenvolvido para:
+1º Fins de ESTUDO e PRÁTICA de implementações de baixa complexidade com segurança.
+2º Adquirir conhecimento em desenvolvimento com as tecnologias (PHP7, MySQL, HTML5, CSS3, javascript e Git).
+3º Servir de material de apoio ilustrativo para soluções futuras do mesmo gênero.
+
+	Como usar:
+Salve o diretório 'app_login' em um servidor web que suporte PHP, execute o script 'webapp.sql' em seu servidor de banco de dados.
+Acesse a aplicação com usuário "admin" e senha "admin" e seja direcionado para a página principal da aplicação.
+Este é todo o fluxo básico necessário para esse projeto.
+Lembrando que, devido ao objetivo ser de manter baixa a complexidade, os padrões de segurança para banco de dados não foram adotados.
+
+
+	Expecificações Tecnicas:
+Nesta solução foram aplicadas as seguintes diretrizes técnicas, práticas e lógicas para melhor uso das teclogías abaixo.
+
+°Git:
+Para realizar o  controle de versão e garantir correções ou aprimoramentos sustentável e colaborativo.
+
+° Servidor de Banco de Dados MySQL:
+Dentro do diretório 'database' há um scritp 'webapp.sql' que cria o banco, tabela e também inclui o usuáiro da aplicação
+usando o motor InnoDB e conjunto de caracteres  latin1, por isso o caminho para acesso ao banco, usuário e senha de abertura de conexção
+seguem os padrões do MySQL Connection.
+Veja mais informações em 'ope.php'*
+
+° HTML5:
+Foi aplicado a tag sintaxe HTML5 para os arquivos 'index.html' e 'site.php'* que empregam o papel de fazer a interface com usuário.
+Em index.hmtl utilizo uma função javascript para traduzir mensagens de alerta dos campos obrigatórios input text e input password.
+Veja mais informações em 'funcoes.js'*
+
+° PHP7:
+Em 'site.php' apliquei o controle de sessões para garantir o minímo de segurança ao impedir o acesso direto a esta página
+quando o usuário não estiver devidamente conectado ao sistema.
+Além disso, também incluí o botão de saída para liberar a sessão, representando assim o final dos trabalhos do administrador. Entretanto, este
+recurso ainda pode ser optimizado,  encerrando a sessão quando fechar a janela do navegador (não implementado).
+Por fim, mas não menos importante no rodapé desta página existe o selo de conformidade CSS vide 'style.css'*.
+Agora dalando em 'ope.php', este arquivo contém as principais regras de inteligência da aplicação, onde foi implementado o método de conexão
+utilizando a biblioteca PDO, que faz-se necessário a revisão das variáveis $PATH, $USER e $PASSWORD para garantir a funcionabilidade desta solução em seu ambiente.
+Concluido, também não faltou o controle de sessões para lembrar e garantir a segurança do trafego de informações.
+
+° CSS3:
+Dentro de 'css' contém um arquivo 'style.css' com marcações simples e de fácil compreensão para dar uma cara mais amigável ao sistema.
+Neste arquivo existe uma refência externa para a imagem de fundo de tela, que está disponível no diretório 'img'.
+Importante informar que todo o arquivo foi validado e aprovado pelo crivo de conformidade em tecnologia CSS3 da WW3.
+
+° javascript:
+Já no diretório 'js' encontra-se o arquivo 'funcoes.js' que possui uma função, como já fora mencionado traduz para Português as
+mensagens quando ocorre o erro de validação nos campos obrigatórios do formulário.
+Esta função foi desenvolvida por Rikin Patel e publicada no Stackoverflow, adaptada e localizada por mim TBrito1 para este projeto.

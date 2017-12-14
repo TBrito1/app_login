@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/**
+* CSS Para dar mais 'vida' ao projeto
+* nenhum detalhe funcional foi adcionado aqui.
+* @author 	TBrito1
+* @since 	2017-11-21
+* @version 	0.0.1
+*/
+body{
+	margin: 10px;
+	background: url('../img/fundo.png'); /*Refencia externa para o imagem de fundo de tela*/
+	background-color: #1b1b1b;
+	background-position: 50% 50%;
+}
+div#interface{
+	padding: 25px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
+	background-color: #284c53;
+}
+/* DIV para centralizar elementos */
+div#centro{
+    display: flex;
+    justify-content: center;
+}
+/* DIV Especifica para o formulario de login*/
+div#centro.login{
+	margin: 95px;
+	padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+fieldset#usuario{ color: #ffffff; }
+fieldset#usuario legend{ font-family: 'Georgia', sans-serif; }
+/* Ajuste de tamanho dos campos Label*/
+fieldset#usuario label{
+	font-family: 'Arial', sans-serif;
+	width:85px;
+	float:left;
+	display:block;
+}
+input.botao{ width:90px; }
+table{
+	width: 800px;
+	height: 748px;
+	border: 1px;
+	color: #ffffff;
+	font-family: 'Arial', sans-serif;
+}
+td#menu{ height: 90px; }
+td#opcoes{
+	width: 103px; 
+	height: 410px;
+}
+td#conteudo{ width: 546px; }
+.borda{
+	margin: 0px;
+	padding: 0px;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #777777;
+}
